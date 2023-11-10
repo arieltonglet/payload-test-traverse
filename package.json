@@ -1,0 +1,30 @@
+{
+  "name": "wellhub-brandcenter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload generate:types"
+  },
+  "dependencies": {
+    "@payloadcms/live-preview-react": "^0.1.5",
+    "@payloadcms/next-payload": "^0.1.9",
+    "@payloadcms/richtext-lexical": "^0.1.15",
+    "cross-env": "^7.0.3",
+    "next": "13.5.6",
+    "payload": "^2.0.15",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "typescript": "^5"
+  }
+}
